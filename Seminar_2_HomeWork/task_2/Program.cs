@@ -1,16 +1,14 @@
-﻿int number = int.Parse(Console.ReadLine());
+﻿int num = int.Parse(Console.ReadLine());
 
-if (number < 100)
+if (num < 100)
 {
-    System.Console.WriteLine("неправильный ввод");
+    System.Console.WriteLine("Третьей цифры нет");
     return 0;
 }
 
-int num = number;
-
 for (int i = 10; num > 999;)
 {
-    num /= i;
+   num /= i;
 }
 
 System.Console.WriteLine(num%10);
