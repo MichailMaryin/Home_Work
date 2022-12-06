@@ -33,9 +33,9 @@ void PrintArray(double[,] array)
 
 
 Console.Write("Введите количество строк - ");
-int lines = Convert.ToInt32(Console.ReadLine());
+int rows = Convert.ToInt32(Console.ReadLine());
 Console.Write("Введите количество столбцов - ");
-int columns = Convert.ToInt32(Console.ReadLine());
-double[,] numbers = new double[lines, columns];
+int cols = Convert.ToInt32(Console.ReadLine());
+double[,] numbers = new double[rows, cols];
 FillArrayRandomNumbers(numbers);
 PrintArray(numbers);
